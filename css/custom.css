@@ -35,8 +35,8 @@ button {
 }
 
 .cta-green {
-    background: #b6b6b7;
-    color: #192440;
+    background: #03a84e;
+    color: #FFFFFF;
 }
 
 .cta-green:hover {
@@ -98,7 +98,7 @@ button {
 }
 
 #price-table__premium {
-    background: #192440;
+    background-color: black;
     color: #ffffff;
 }
 
@@ -128,7 +128,7 @@ button {
 
 /********** copyright **********/
 #copyright {
-    background: #192440;
+    background: black;
     padding: 2rem 3rem;
 }
 
@@ -141,7 +141,7 @@ button {
 }
 
 #copyright #social-media a i {
-    color: #192440;
+    color: black;
     font-size: 1.2rem;
     line-height: 40px;
 }
