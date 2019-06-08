@@ -62,6 +62,26 @@ img.zoom {
 .modal-footer{
   display:none;  
 }
+.marquee {
+  width: 100%;
+  background-color:black;
+  margin-bottom: 20px;
+}
+
+.marquee img {
+  width: 170px;
+}
+
+.title {
+  font-size: 18pt;
+  position: absolute;
+  bottom: 0;
+  left: 30px
+}
+.cont {
+  position: relative;
+  display: inline-block;
+}
 </style>
 </head>
 
@@ -249,30 +269,60 @@ img.zoom {
         </div>
     </div>
     <!-- client -->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-1.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-2.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-3.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-4.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-5.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-6.png" class="mx-auto d-block">
-                </div>
+    <section>
+        <div class="marquee">
+          <marquee behavior="alternate" direction="left" onmouseout="this.start()" onmouseover="this.stop()">
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_06.png"></a>
             </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_07.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_08.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_09.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_10.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_11.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_12.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_13.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_14.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_15.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_16.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_17.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_18.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_19.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_20.png"></a>
+            </div>
+            <div class="cont">
+              <a href="#"><img src="img/clientes/Logos_21.png"></a>
+            </div>
+          </marquee>
         </div>
-    </div>
+    </section>
     <!-- contact -->
     <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/contact-bk.jpg);">
         <div class="container my-5">
