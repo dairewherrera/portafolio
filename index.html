@@ -339,6 +339,31 @@ img.zoom {
         </div>
     </section>
     <!-- contact -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("user_hR9YMLHKzvz5rHc3Ez3Dq");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                var result = emailjs.sendForm('dairewdesign@gmail.com', 'template_BY5L79qP', this)
+                .then(function (result){
+                    if (result.text=='OK'){
+                        $('#response-email').html('<h3>Gracias! Hemos recibido su solicitud...</h3>');
+                        setTimeout(function(){ location.reload() }, 2000);
+                    }
+                    else
+                    {
+                        $('#response-email').html('<h3>Error! Intente en otro momento, nuestros servidores estan ocupados.</h3>');
+                    }
+                });
+            });
+        }
+    </script>    
     <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/banner-bk.png);">
         <div class="container my-5">
             <div class="row justify-content-between">
@@ -354,21 +379,22 @@ img.zoom {
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <form action="send_mail.php" method="post">
+                    <form action="#" method="post" id="contact-form">
+                        <input type="hidden" name="contact_number">
                     	<div class="row">
 	                        <div class="form-group col-md-6">
-	                            <label for="name">Tu Nombre</label>
-	                            <input type="name" class="form-control" name="name">
+	                            <label for="user_name">Tu Nombre</label>
+	                            <input type="text" class="form-control" name="user_name">
 	                        </div>
 	                        <div class="form-group col-md-6">
-	                            <label for="telefono">Num. de Teléfono</label>
-	                            <input type="text" class="form-control" name="phone">
+	                            <label for="user_telf">Num. de Teléfono</label>
+	                            <input type="text" class="form-control" name="user_telf">
 	                        </div>
 	                    </div>
                         <div class="row">
                             <div class="form-group col-md-12">
-                                <label for="Email">Tu Correo</label>
-                                <input type="email" class="form-control" name="email">
+                                <label for="user_email">Tu Correo</label>
+                                <input type="email" class="form-control" name="user_email">
                             </div>
                         </div>
 	                    <div class="form-group">
@@ -376,7 +402,9 @@ img.zoom {
 	                        <textarea class="form-control" name="message" rows="3"></textarea>
 	                    </div>
                         <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Enviar</button>
+                        <div class="label label-primary text-center" id="response-email"></div>
                     </form>
+                    
                 </div>
             </div>
         </div>
