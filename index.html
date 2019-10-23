@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="css/aos.css">
     <!------ Include the above in your HEAD tag IMAGENES ---------->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+
+    <script src="https://unpkg.com/popper.js"></script>
     <style>
-        #demo {
+#demo {
   height:100%;
   position:relative;
   overflow:hidden;
@@ -61,15 +62,6 @@ img.zoom {
 }
 .modal-footer{
   display:none;  
-}
-.marquee {
-  width: 100%;
-  background-color: black;
-  margin-bottom: 20px;
-}
-
-.marquee img {
-  width: 170px;
 }
 
 .title {
@@ -142,47 +134,55 @@ img.zoom {
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
                      <div class="row">
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_08.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_08.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_08.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_08.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_08.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_08.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_08.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_08.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_08.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_08.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_08.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_08.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_08.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_08.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_08.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_08.jpg" class="img-fluid "  alt="">
-                            </a>
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img  src="img/redes/1.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/2.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/3.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/4.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/5.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/12.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/6.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/13.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/14.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/15.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/16.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/17.png" class="img-fluid "  alt="">
+							    </div>
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="sr-only">Ant.</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="sr-only">Sig.</span>
+							  </a>
+							</div>
                         </div>
                     </div>
                 </div>
@@ -202,47 +202,67 @@ img.zoom {
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
                     <div class="row">
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
+                        <div class="col-lg-12 col-md-12 col-xs-12 thumb">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img  src="img/identidad/1.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/2.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/3.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/4.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/5.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/6.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/7.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/8.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/9.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/10.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/11.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/12.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/13.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/14.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/15.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/identidad/16.png" class="img-fluid "  alt="">
+							    </div>
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="sr-only">Ant.</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="sr-only">Sig.</span>
+							  </a>
+							</div>
                         </div>
                     </div>
                 </div>
@@ -254,48 +274,41 @@ img.zoom {
         <div class="container">
             <div class="row justify-content-between text-center text-md-left">
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-last">
-                                  <div class="row">
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <a href="img/portafolio/Logos_09.jpg" class="fancybox" rel="ligthbox">
-                                <img  src="img/portafolio/Logos_09.jpg" class="img-fluid "  alt="">
-                            </a>
+               		<div class="row">
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img  src="img/redes/12.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/6.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/13.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/14.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/15.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/16.png" class="img-fluid "  alt="">
+							    </div>
+							    <div class="carousel-item">
+							      <img  src="img/redes/17.png" class="img-fluid "  alt="">
+							    </div>
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="sr-only">Ant.</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="sr-only">Sig.</span>
+							  </a>
+							</div>
                         </div>
                     </div>
                 </div>
@@ -514,11 +527,16 @@ img.zoom {
       });
 
     $(document).ready(function(){
+    	$('.carousel').carousel({
+		  interval: 2000,
+		  pause: "false"
+		});
+    /*
     $(".fancybox").fancybox({
         openEffect: "none",
         closeEffect: "none"
     });
-
+	*/
     $(".zoom").hover(function(){
 
     $(this).addClass('transition');
