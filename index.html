@@ -8,20 +8,25 @@
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
     <!-- custom.css -->
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- bootstrap.min.css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- font-awesome -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     
     <!-- AOS -->
     <link rel="stylesheet" href="css/aos.css">
     <!------ Include the above in your HEAD tag IMAGENES ---------->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
-
-    <script src="https://unpkg.com/popper.js"></script>
     <style>
 #demo {
   height:100%;
@@ -123,7 +128,223 @@ img.zoom {
             </div>
         </div>
     </div>
-    <!-- feature (skew background) -->
+
+<!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+        <h2 class="text-center font-weight-bold">Portafolio</h2>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_01.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_01.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 1</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_03.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_03.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 3</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_02.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_02.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 2</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_04.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_04.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 4</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_05.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_05.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 5</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_06.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_06.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 6</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_07.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_07.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 7</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_08.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_08.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 8</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_09.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_09.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 9</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_10.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_10.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 10</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_11.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_11.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 11</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portafolio/Logos_12.jpg" class="img-fluid" alt="">
+                <a href="img/portafolio/Logos_12.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 12</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+<!--==========================
+      Gallery Section
+    ============================-->
+
+<section id="gallery" class="wow fadeInUp">
+<div class="container">
+    <h2 class="text-center font-weight-bold">Feeds RSS</h2>
+    <div class="fotorama">
+        <img alt="picture" src="img/redes/1.png" class="img-fluid">
+        <img alt="picture" src="img/redes/2.png" class="img-fluid"> 
+        <img alt="picture" src="img/redes/3.png" class="img-fluid"> 
+        <img alt="picture" src="img/redes/4.png" class="img-fluid"> 
+        <img alt="picture" src="img/redes/5.png" class="img-fluid"> 
+        <img alt="picture" src="img/redes/6.png" class="img-fluid"> 
+        <img alt="picture" src="img/redes/12.png" class="img-fluid"> 
+        <img alt="picture" src="img/redes/13.png" class="img-fluid"> 
+        <img alt="picture" src="img/redes/14.png" class="img-fluid"> 
+        <img alt="picture" src="img/redes/15.png" class="img-fluid"> 
+        <img alt="picture" src="img/redes/16.png" class="img-fluid"> 
+    </div>
+</div>
+</section>
+
+<!--  section old 1 
     <div class="jumbotron jumbotron-fluid feature" id="feature-first">
         <div class="container my-5">
             <div class="row justify-content-between text-center text-md-left">
@@ -190,6 +411,8 @@ img.zoom {
         </div>
     </div>
     <!-- feature (green background) -->
+
+<!--  section old 2
     <div class="jumbotron jumbotron-fluid feature" id="feature-last">
         <div class="container">
             <div class="row justify-content-between text-center text-md-left">
@@ -270,6 +493,8 @@ img.zoom {
         </div>
     </div>
     <!-- feature (green background) -->
+
+<!--  section old 3    
     <div class="jumbotron jumbotron-fluid feature" id="feature-first">
         <div class="container">
             <div class="row justify-content-between text-center text-md-left">
@@ -384,7 +609,7 @@ img.zoom {
     </div>
     -->
     <!-- price table -->
-    <div class="container my-5 py-2" id="price-table">
+    <div class="container py-2" id="price-table">
         <h2 class="text-center font-weight-bold d-block mb-3">Promociones StartUp</h2>
         <div class="row">
             <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">          
@@ -429,32 +654,37 @@ img.zoom {
             </div>
         </div>
     </div>
+
+<!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="">
+        <h2 class="text-center font-weight-bold">Clientes - Identidad de Marca</h2>
+        <div class="owl-carousel clients-carousel">
+          <img src="img/identidad/1.png" alt="">
+          <img src="img/identidad/2.png" alt="">
+          <img src="img/identidad/3.png" alt="">
+          <img src="img/identidad/4.png" alt="">
+          <img src="img/identidad/5.png" alt="">
+          <img src="img/identidad/6.png" alt="">
+          <img src="img/identidad/7.png" alt="">
+          <img src="img/identidad/8.png" alt="">
+          <img src="img/identidad/9.png" alt="">
+          <img src="img/identidad/10.png" alt="">
+          <img src="img/identidad/11.png" alt="">
+          <img src="img/identidad/12.png" alt="">
+          <img src="img/identidad/13.png" alt="">
+          <img src="img/identidad/14.png" alt="">
+          <img src="img/identidad/15.png" alt="">
+          <img src="img/identidad/16.png" alt="">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+
     <!-- contact -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-           emailjs.init("user_hR9YMLHKzvz5rHc3Ez3Dq");
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                this.contact_number.value = Math.random() * 100000 | 0;
-                var result = emailjs.sendForm('dairewdesign@gmail.com', 'template_BY5L79qP', this)
-                .then(function (result){
-                    if (result.text=='OK'){
-                        $('#response-email').html('<h3>Gracias! Hemos recibido su solicitud...</h3>');
-                        setTimeout(function(){ location.reload() }, 2000);
-                    }
-                    else
-                    {
-                        $('#response-email').html('<h3>Error! Intente en otro momento, nuestros servidores estan ocupados.</h3>');
-                    }
-                });
-            });
-        }
-    </script>    
     <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/banner-bk.png);">
         <div class="container my-5">
             <div class="row justify-content-between">
@@ -519,33 +749,58 @@ img.zoom {
             </div>
         </div>
     </div>
-    
+      <!-- JavaScript Libraries -->
+      <script src="lib/jquery/jquery.min.js"></script>
+      <script src="lib/jquery/jquery-migrate.min.js"></script>
+      <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/superfish/hoverIntent.js"></script>
+      <script src="lib/superfish/superfish.min.js"></script>
+      <script src="lib/wow/wow.min.js"></script>
+      <script src="lib/waypoints/waypoints.min.js"></script>
+      <script src="lib/counterup/counterup.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+      <script src="lib/isotope/isotope.pkgd.min.js"></script>
+      <script src="lib/lightbox/js/lightbox.min.js"></script>
+      <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+       <script src="https://unpkg.com/popper.js"></script>
+
     <!-- AOS -->
+    <script src="js/main.js"></script>
     <script src="js/aos.js"></script>
     <script>
       AOS.init({
       });
-
-    $(document).ready(function(){
-    	$('.carousel').carousel({
-		  interval: 2000,
-		  pause: "false"
-		});
-    /*
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-	*/
-    $(".zoom").hover(function(){
-
-    $(this).addClass('transition');
-    }, function(){
-
-    $(this).removeClass('transition');
-    });
-    });
     </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("user_hR9YMLHKzvz5rHc3Ez3Dq");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                var result = emailjs.sendForm('dairewdesign@gmail.com', 'template_BY5L79qP', this)
+                .then(function (result){
+                    if (result.text=='OK'){
+                        $('#response-email').html('<h3>Gracias! Hemos recibido su solicitud...</h3>');
+                        setTimeout(function(){ location.reload() }, 2000);
+                    }
+                    else
+                    {
+                        $('#response-email').html('<h3>Error! Intente en otro momento, nuestros servidores estan ocupados.</h3>');
+                    }
+                });
+            });
+        }
+    </script>    
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
